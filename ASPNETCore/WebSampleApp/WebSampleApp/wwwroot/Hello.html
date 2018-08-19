@@ -2,9 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>ASP.NET Core Sample</title>
+    <title>Learning ASP.NET Core</title>
 </head>
 <body>
-    <h1>Hello, ASP.NET with Static Files</h1>
+    <h1>Program Execution</h1>
+    <ul>
+        <li>The site begins with Main() in Program.cs.  This Builds the Webhost and directs it to use Startup.cs</li>
+        <li>Startup.cs has methods like Configure and ConfigureServices that are called automagically.  Here we also define custom mapping that tells the server how to process specific requests.</li>
+        <li>Before the actual response is mapped to the correct app.run configured in Startup.cs any MiddleWare is executed because we added it in the Builder</li>
+        <li>And that's really all that is shown here.  Probably more interested in the MVC chapter.</li>
+    </ul>
 </body>
 </html>
